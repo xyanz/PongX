@@ -80,7 +80,7 @@ Test your wits & knowledge with whatever-the-heck you know about (so you can act
 
 #### Project Feedback + Evaluation
 
-Your project will be evalated using [this rubric](rubric.md), assessing the following:
+Your project will be evaluated using [this rubric](rubric.md), assessing the following:
 
 - **Professionalism**
 - **Functionality and Requirements**
