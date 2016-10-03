@@ -4,9 +4,13 @@
 
 Let's start out with something fun - a game!
 
-Everyone will get a chance to be creative, and work through some really tough programming challenges - it's up to you to come up with a fun and interesting game to build.
+Everyone will get a chance to be creative, and work through some really tough programming challenges - it's up to you to use what you've learned to come up with a fun and interesting game.
 
-You will be working individually for this project, but we'll be guiding you along the process and helping as you go. Show us what you've got!
+You will be working individually for this project, but we'll be guiding you along the process and helping as you go.
+
+As part of this project, you'll be required to create a project presentation that you will use to present your work at the end of project week. Your goal for this presentation is to extract the most important aspects of what went into building your project into easy-to-use language and practice speaking and presenting about your code.
+
+Show us what you've got!
 
 
 ---
@@ -29,6 +33,17 @@ Your app must:
 - Adhere to the [AirBnB style guide](https://github.com/airbnb/javascript) for writing your JavaScript
 - Adhere to the [Google style guide](https://google.github.io/styleguide/htmlcssguide.xml) for writing your HTML/CSS
 
+Your presentation must:
+
+- Be at least 5 slides
+- Use easy-to-understand language and avoid too much "insider" terminology
+- Include at least one wireframe that shows your game page
+- Include a screenshot of the existing landing page you've replicated
+- Answer the following questions:
+	- What features did include?
+	- Were there any constraints you had to work with? (e.g. technological, timing, content, etc.)
+	- Is there any other information you think might help us (your stakeholders) understand what you've built?
+
 **Bonus**
 
 - If a two-player game, design logic for winning & visually display which player won (why: not all games have one winner)
@@ -41,12 +56,17 @@ Your app must:
 
 #### Necessary Deliverables
 
+For the app:
+
 * A working game, built by you, hosted on GitHub Pages
 * A link to the landing page you've chosen to recreate your landing from with a screen shot of that page in your readme.md
 * A link to your hosted working game in the URL section of your GitHub repo
 * A git repository hosted on GitHub, with a link to your hosted game, and frequent commits dating back to the very beginning of the project
 * A readme.md file with explanations of the technologies used, wireframes the approach taken, installation instructions, unsolved problems, etc.
 
+For the presentation:
+
+* Create a presentation deck - Google Slides, Keynote, PowerPoint - of at least 5 slides that answers the questions above and images of your wireframes and a screenshot of your landing page.
 ---
 
 #### Suggested Ways to Get Started
