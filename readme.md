@@ -27,7 +27,7 @@ Your app must:
 - Use your form to collect information about the user and display that information on the game page; be sure to add things to your form, if needed, like buttons, sliders, checkboxes, radio buttons, etc.
 - Style your form, landing page, and game page with class-based CSS
 - Include a media query for a tablet to make your pages responsive
-- Use skeleton.css for your grid system
+- Use flexbox to build your grid system
 - Create and get approval for a wireframe for your game page
 - Comment your code appropriately
 - Adhere to the [AirBnB style guide](https://github.com/airbnb/javascript) for writing your JavaScript
