@@ -43,14 +43,14 @@ Project 1 will be assessed using the following standards, as defined by the cour
 | Presentation effectively describes constraints to work with (e.g. technological, timing, content, etc.)| | | | |
 | Presentation uses easy-to-understand language | | | | |
 | Presentation includes a wireframe for the game page and an existing landing page from the web to build from | | | | |
-| App renders a game in the browser | | | |
-| App uses only jQuery for DOM manipulation | | | |
-| App includes at least one CSS transition fired by a DOM event | | | |
-| App has as landing page, replicated from an existing web page, that links to a game | | | |
-| App uses a form to collect information about the user and display that information; include things like buttons, sliders, checkboxes, radio buttons, etc. | | | |
-| App includes a styled a form, landing page, and game with class-based CSS | | | |
-| App includes a media query for a tablet to make the game responsive | | | |
-| App uses skeleton.css for a grid system | | | |
+| Student work renders a game in the browser | | | |
+| Student work includes only jQuery for DOM manipulation | | | |
+| Student work includes at least one CSS transition fired by a DOM event | | | |
+| Student work has as landing page, replicated from an existing web page, that links to a game | | | |
+| Student work uses a form to collect information about the user and display that information; include things like buttons, sliders, checkboxes, radio buttons, etc. | | | |
+| Student work includes a styled a form, landing page, and game with class-based CSS | | | |
+| Student work includes a media query for a tablet to make the game responsive | | | |
+| Student work uses skeleton.css for a grid system | | | |
 
 
 
