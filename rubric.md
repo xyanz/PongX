@@ -14,7 +14,6 @@ Project 1 will be assessed using the following standards, as defined by the cour
 **Meets Expectations**: Student demonstrates ability to communicate and collaborate with others in the classroom and/or on a team. They treat their peers, teammates, instructors with respect, make and follow agreements, and maintain a growth mindset. Application of these learning goals will be assessed using the criteria below:
 
 #### Performance Evaluation
-> Mark boxes with 'X'
 
 | Criteria | Incomplete (0) | Does Not Meet Expectations (1) | Meets Expectations (2) | Exceeds Expectations (3) |
 |---|---|---|---|---|
@@ -35,7 +34,6 @@ Project 1 will be assessed using the following standards, as defined by the cour
 **Meets Expectations**: Student delivers a project that met all the requirements.
 
 #### Performance Evaluation
-> Mark boxes with an 'X'
 
 | Requirements | Incomplete (0) | Does Not Meet Expectations (1) | Meets Expectations (2) | Exceeds Expectations (3) |
 |---|---|---|---|---|
@@ -63,7 +61,6 @@ Project 1 will be assessed using the following standards, as defined by the cour
 **Meets Expectations**: HTML, CSS, and JavaScript adheres to the provided style guides, is commented appropriately, and performs well.
 
 #### Performance Evaluation
-> Mark boxes with an 'X'
 
 | Requirements | Incomplete (0) | Does Not Meet Expectations (1) | Meets Expectations (2) | Exceeds Expectations (3) |
 |---|---|---|---|---|
@@ -81,7 +78,6 @@ Project 1 will be assessed using the following standards, as defined by the cour
 **Meets Expectations**: Student added a personal spin or creative element into the project submission.
 
 #### Performance Evaluation
-> Mark boxes with an 'X'
 
 | Requirements | Incomplete (0) | Does Not Meet Expectations (1) | Meets Expectations (2) | Exceeds Expectations (3) |
 |---|---|---|---|---|
@@ -99,7 +95,6 @@ Project 1 will be assessed using the following standards, as defined by the cour
 **Meets Expectations**: Student deployed an application to GitHub Pages with a readme including wireframes, frequent commits, and technology explanations.
 
 #### Performance Evaluation
-> Mark boxes with an 'X'
 
 | Requirements | Incomplete (0) | Does Not Meet Expectations (1) | Meets Expectations (2) | Exceeds Expectations (3) |
 |---|---|---|---|---|
