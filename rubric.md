@@ -18,12 +18,12 @@ Project 1 will be assessed using the following standards, as defined by the cour
 
 | Criteria | Incomplete (0) | Does Not Meet Expectations (1) | Meets Expectations (2) | Exceeds Expectations (3) |
 |---|---|---|---|---|
-| Be present both mentally and physically in class and/or during team meetings | | | | |
-| Effectively communicate work, progress, availability and expectations to instructional team and classmates | | | | |
-| Meet all major required deadlines for deliverables | | | | |
-| Organize project materials in a structured, easily navigable manner | | | | |
-| Respond to constructive feedback and implement suggested improvements | | | | |
-| Resolve conflict in a professional and respectful manner | | | | |
+| Student is present both mentally and physically in class and/or during team meetings | | | | |
+| Student effectively communicates work, progress, availability and expectations to instructional team and classmates | | | | |
+| Student meets all major required deadlines for deliverables | | | | |
+| Student organizes project materials in a structured, easily navigable manner | | | | |
+| Student responds to constructive feedback and implements suggested improvements | | | | |
+| Student resolves conflict in a professional and respectful manner | | | | |
 
 - Section Subscore:  / 18
 - Notes:
@@ -39,14 +39,19 @@ Project 1 will be assessed using the following standards, as defined by the cour
 
 | Requirements | Incomplete (0) | Does Not Meet Expectations (1) | Meets Expectations (2) | Exceeds Expectations (3) |
 |---|---|---|---|---|
-| Render a game in the browser | | | |
-| Use only jQuery for DOM manipulation | | | |
-| Include at least one CSS transition fired by a DOM event | | | |
-| Choose an existing landing page on the web and replicate its markup to create a separate game landing page that links to a game | | | |
-| Use a form to collect information about the user and display that information; include things like buttons, sliders, checkboxes, radio buttons, etc. | | | |
-| Style a form, the landing page, and the game with class-based CSS | | | |
-| Include a media query for a tablet to make the game responsive | | | |
-| Use skeleton.css for a grid system | | | |
+| Presentation effectively describes what features will be included | | | | |
+| Presentation effectively describes constraints to work with (e.g. technological, timing, content, etc.)| | | | |
+| Presentation uses easy-to-understand language | | | | |
+| Presentation includes a wireframe for the game page and an existing landing page from the web to build from | | | | |
+| App renders a game in the browser | | | |
+| App uses only jQuery for DOM manipulation | | | |
+| App includes at least one CSS transition fired by a DOM event | | | |
+| App has as landing page, replicated from an existing web page, that links to a game | | | |
+| App uses a form to collect information about the user and display that information; include things like buttons, sliders, checkboxes, radio buttons, etc. | | | |
+| App includes a styled a form, landing page, and game with class-based CSS | | | |
+| App includes a media query for a tablet to make the game responsive | | | |
+| App uses skeleton.css for a grid system | | | |
+
 
 
 - Section Subscore:  / 27
@@ -62,9 +67,9 @@ Project 1 will be assessed using the following standards, as defined by the cour
 
 | Requirements | Incomplete (0) | Does Not Meet Expectations (1) | Meets Expectations (2) | Exceeds Expectations (3) |
 |---|---|---|---|---|
-| Adhere to the [AirBnB style guide](https://github.com/airbnb/javascript) for writing JavaScript | | | |
-| Adhere to the [Google style guide](https://google.github.io/styleguide/htmlcssguide.xml) for writing HTML/CSS | | | |
-| Comment code appropriately | | | |
+| Code adheres to the [AirBnB style guide](https://github.com/airbnb/javascript) for writing JavaScript | | | |
+| Code adheres to the [Google style guide](https://google.github.io/styleguide/htmlcssguide.xml) for writing HTML/CSS | | | |
+| Code is commented appropriately | | | |
 | Code runtime is appropriate for project's complexity | | | |
 
 - Section Subscore:  / 12
@@ -80,7 +85,7 @@ Project 1 will be assessed using the following standards, as defined by the cour
 
 | Requirements | Incomplete (0) | Does Not Meet Expectations (1) | Meets Expectations (2) | Exceeds Expectations (3) |
 |---|---|---|---|---|
-| Add a personal spin to the project | | | | |
+| Student added a personal spin to the project | | | | |
 
 - Section Subscore:  / 3
 - Notes:
@@ -98,10 +103,10 @@ Project 1 will be assessed using the following standards, as defined by the cour
 
 | Requirements | Incomplete (0) | Does Not Meet Expectations (1) | Meets Expectations (2) | Exceeds Expectations (3) |
 |---|---|---|---|---|
-| Provide a link to a repository on GitHub that includes frequent commits dating back to the very beginning of the project | | | | |
-| Include a readme file with explanations of the technologies used, the approach taken, installation instructions, unsolved problems, etc. | | | | |
-| Include a link to the landing page chosen to recreate the landing from | | | |
-| Create and get approval for a wireframe for a game page | | | |
+| Student provided a link to a repository on GitHub that includes frequent commits dating back to the very beginning of the project | | | | |
+| Student included a readme file with explanations of the technologies used, the approach taken, installation instructions, unsolved problems, etc. | | | | |
+| Student included a link to the landing page chosen to recreate the landing from | | | |
+| Student created and got approval for a wireframe for a game page | | | |
 
 - Section Subscore:  / 12
 - Notes:
