@@ -67,6 +67,7 @@ For the app:
 For the presentation:
 
 * Create a presentation deck - Google Slides, Keynote, PowerPoint - of at least 5 slides that answers the questions above and images of your wireframes and a screenshot of your landing page.
+
 ---
 
 #### Suggested Ways to Get Started
