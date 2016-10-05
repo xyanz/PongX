@@ -44,12 +44,16 @@ Your presentation must:
 	- Were there any constraints you had to work with? (e.g. technological, timing, content, etc.)
 	- Is there any other information you think might help us (your stakeholders) understand what you've built?
 
-**Bonus**
+***Note***
+If you're creating a two(or more)-player game, you MUST:
+- allow players to take turns
+- design logic for winning & visually display which player won
 
-- If a two-player game, design logic for winning & visually display which player won (why: not all games have one winner)
-- If a two-player game, allow players to take turns (why: not all games have two players or one winner)
+
+**Bonus**
+- If this is a one-player game, design logic for winning & visually display which player won (why: not all games have one winner)
 - Include at least one animation using HTML Canvas or SVG (why: challenge advanced students who will feel limited using jQuery)
-- Include a "Tutorial Section" of this landing page (why: instructors are good for students to think through the "UX" of their project)
+- Include a "Tutorial Section" of this landing page (why: instructions are good for students to think through the "UX" of their project)
 
 
 ---
