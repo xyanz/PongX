@@ -26,7 +26,7 @@ Your app must:
 - Create a landing page that includes a form
 - Use your form to collect information about the user and display that information on the game page; be sure to add things to your form, if needed, like buttons, sliders, checkboxes, radio buttons, etc.
 - Style your form, landing page, and game page with class-based CSS (no inline styles)
-- <strike>Include a media query for a tablet to make your pages responsive</strike>
+- Include a media query for a tablet to make your pages responsive
 - Use flexbox to lay out your game
 - **Create and get approval for a wireframe for your game page**
 - Comment your code appropriately

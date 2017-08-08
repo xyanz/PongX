@@ -42,7 +42,7 @@ Project 1 will be assessed using the following standards and evaluation metrics 
 - Student work uses a form to collect information about the user and display that information; include things like buttons, sliders, checkboxes, radio buttons, etc. 
 - Student work includes a styled a form, landing page, and game with class-based CSS 
 - Student work includes a media query for a tablet to make the game responsive 
-- Student work uses skeleton.css for a grid system 
+- Student uses flexbox to lay out game
 
 
 
@@ -58,8 +58,6 @@ Project 1 will be assessed using the following standards and evaluation metrics 
 - Code adheres to the [AirBnB style guide](https://github.com/airbnb/javascript) for writing JavaScript 
 - Code adheres to the [Google style guide](https://google.github.io/styleguide/htmlcssguide.xml) for writing HTML/CSS 
 - Code is commented appropriately 
-- Code runtime is appropriate for project's complexity 
-
 
 ---
 
@@ -99,7 +97,7 @@ Project 1 will be assessed using the following standards and evaluation metrics 
 |Student responds to constructive feedback and implements suggested improvements
 |Student resolves conflict in a professional and respectful manner
 |---
-| Presentation effectively describes what features will be included 
+|Presentation effectively describes what features will be included 
 |Presentation effectively describes constraints to work with (e.g. technological, timing, content, etc.)
 |Presentation uses easy-to-understand language 
 |Presentation includes a wireframe for the game page and an existing landing page from the web to build from 
@@ -110,18 +108,16 @@ Project 1 will be assessed using the following standards and evaluation metrics 
 |Student work uses a form to collect information about the user and display that information; include things like buttons, sliders, checkboxes, radio buttons, etc. 
 |Student work includes a styled a form, landing page, and game with class-based CSS 
 |Student work includes a media query for a tablet to make the game responsive 
-|Student work uses skeleton.css for a grid system 
+|Student uses flexbox to lay out game
 |---|
 |Code adheres to the [AirBnB style guide](https://github.com/airbnb/javascript) for writing JavaScript 
 |Code adheres to the [Google style guide](https://google.github.io/styleguide/htmlcssguide.xml) for writing HTML/CSS 
 |Code is commented appropriately 
-|Code runtime is appropriate for project's complexity
 |---|
 |Student added a personal spin to the project
 |---|
 |Student provided a link to a repository on GitHub that includes frequent commits dating back to the very beginning of the project
 |Student included a readme file with explanations of the technologies used, the approach taken, installation instructions, unsolved problems, etc.
-|Student included a link to the landing page chosen to recreate the landing from
 |Student created and got approval for a wireframe for a game page
 |---
 |**TOTAL POSSIBLE POINTS** (40)
