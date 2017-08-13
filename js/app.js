@@ -31,6 +31,8 @@ const $els = {
   gameActive: false,
   startButton: $('#start-button')[0],
   stopButton: $('#stop-button')[0],
+  playerScore: 0,
+  elapsedTime: 0,
 
 }
 
@@ -42,10 +44,10 @@ window.onload = function() {
 //a.keycode = 65 z.keycode = 90
 function movePaddle(){
   console.log(event);
-  if (event.keyCode === 65) {
+  if (event.keyCode === 65 && $els.paddle1Pos > 0) {
     $els.paddle1Pos -= 25;
     $els.paddle1.style.top = `${$els.paddle1Pos}px`;
-  }else if (event.keyCode === 90) {
+  }else if (event.keyCode === 90 && $els.paddle1Pos < 400) {
     $els.paddle1Pos += 25;
     $els.paddle1.style.top = `${$els.paddle1Pos}px`;
   }
@@ -62,40 +64,46 @@ function checkCollision(object1, object2){
   object2y = object2.getBoundingClientRect().left;
   object2height = object2.getBoundingClientRect().height;
   object2width = object2.getBoundingClientRect().width;
-  $('#position-info1').html(`1x: ${Math.floor(object1x)}______`)
-  $('#position-info2').html(`1y: ${Math.floor(object1y)}______`)
-  $('#position-info3').html(`1h: ${object1height}______`)
-  $('#position-info4').html(`1w: ${object1width}______`)
-  $('#position-info5').html(`2x: ${object2x}______`)
-  $('#position-info6').html(`2y: ${object2y}______`)
-  $('#position-info7').html(`2h: ${object2height}______`)
-  $('#position-info8').html(`2w: ${object2width}______`)
+
   if (object1x < object2x + object2width &&
     object1x + object1width > object2x &&
     object1y < object2y + object2height &&
     object1height + object1y > object2y) {
-      alert("Collision detected!");
+    addPlayerScore();
       return true;
   }
 }
 
+//Adds 1 to player score on collision and outputs result
+function addPlayerScore() {
+  setInterval(resetElapsed, 1500);
+  if ($els.elapsedTime == 1500){
+    $els.playerScore++;
+    $('#playerScore').html(`Player Score: ${$els.playerScore}`)
+    $els.elapsedTime = 0;
+  }
+}
+
+//Elapsed time with 1.5sec delay to avoid multiple points during collision
+function resetElapsed() {
+  $els.elapsedTime = 1500;
+}
 function moveComputerPaddle() {
   $els.paddle2.style.top = `${$els.ball.getBoundingClientRect().top}px`;
 }
 function ballPaddleCollision() {
   if (checkCollision($els.ball, $els.paddle1)) {
-    console.log("collision detected!")
   }
-}
-function ballWallCollision() {
 }
 function startGame() {
   $('#ball').addClass('ball-active');
   $('#horizontal').addClass('horizontal');
+  startCount();
 }
 function stopGame() {
   $('#ball').removeClass("ball-active");
   $('#horizontal').removeClass("horizontal");
+  stopCount();
 }
 
 //////////////REQUEST ANIMATION EVENTS/////////////////////
@@ -122,34 +130,37 @@ $("#stop-button").on("click", function() {
   }
   status = 0;
 });
-/////////////END REQUEST ANIMATION//////////////////////////
 
-// Helper function to get an element's exact position
-// function getPosition(el) {
-//   var xPos = 0;
-//   var yPos = 0;
+/////////////////////////// GAME TIMER ////////////////////////////////
+//https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_settimeout_cleartimeout2///
+let totalTime = 30;
+let currentTime = 0;
+let t;
+let timer_is_on = 0;
 
-//   while (el) {
-//     if (el.tagName == "BODY") {
-//       // deal with browser quirks with body/window/document and page scroll
-//       var xScroll = el.scrollLeft || document.documentElement.scrollLeft;
-//       var yScroll = el.scrollTop || document.documentElement.scrollTop;
+function timedCount() {
+  if ((totalTime - currentTime) <= 0) {
+    stopGame();
+  }
+    $('#countdownTimer').html(totalTime - currentTime);
+    currentTime = currentTime + 1;
+    t = setTimeout(function(){ timedCount() }, 1000);
+}
 
-//       xPos += (el.offsetLeft - xScroll + el.clientLeft);
-//       yPos += (el.offsetTop - yScroll + el.clientTop);
-//     } else {
-//       // for all other non-BODY elements
-//       xPos += (el.offsetLeft - el.scrollLeft + el.clientLeft);
-//       yPos += (el.offsetTop - el.scrollTop + el.clientTop);
-//     }
+function startCount() {
+    if (!timer_is_on) {
+        timer_is_on = 1;
+        timedCount();
+    }
+}
 
-//     el = el.offsetParent;
-//   }
-//   return {
-//     x: xPos,
-//     y: yPos
-//   };
-// }
+function stopCount() {
+    clearTimeout(t);
+    timer_is_on = 0;
+}
+
+
+
 
 
 

@@ -16,11 +16,14 @@
   width: 100px;
   top: 150px;
   position: absolute;
+  background: url('images/paddle1.jpg') no-repeat top left;
   /*box-sizing: content-box;*/
 }
 #paddle1 {
   border: 2px dotted green;
   left: 10px;
+  background: url('images/paddle1.jpg') no-repeat top left;
+
 }
 #paddle2 {
   border: 2px dotted blue;
@@ -28,7 +31,7 @@
 }
 @keyframes leftright {
 0%,100% {transform: translate3d(-510px,0,0)}
-50% {transform: translate3d(500px, 0, 0)}
+50% {transform: translate3d(380px, 0, 0)}
 }
 @keyframes updown {
  0%,50%,100% {transform: translate3d(0,0,0)}
