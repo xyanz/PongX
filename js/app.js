@@ -45,11 +45,9 @@ function movePaddle(){
   if (event.keyCode === 65) {
     $els.paddle1Pos -= 25;
     $els.paddle1.style.top = `${$els.paddle1Pos}px`;
-    //ballPaddleCollision();
   }else if (event.keyCode === 90) {
     $els.paddle1Pos += 25;
     $els.paddle1.style.top = `${$els.paddle1Pos}px`;
-    //ballPaddleCollision();
   }
 }
 
