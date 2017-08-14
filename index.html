@@ -13,14 +13,17 @@ Start screen, form, game win screen -->
   <!-- PHASE 1 LANDING PAGE CONTAINER -->
   <div class="landing-container">
     <div class="landing-jumbotron">
-      <div class="logo">
-        <h1>PongX</h1>
-      </div>
-      <div class="player-form">
-        <form>
-          <input type="text" id="fname" name="fname" placeholder="Name">
-        </form>
-      </div>
+      <h1>PongX</h1>
+      <form>
+        <input type="text" id="fname" name="fname" placeholder="Name">
+        <select id="difficulty" name="hardness">
+          <option value="" disabled selected>difficulty</option>
+          <option value="ez">easy</option>
+          <option value="med">medium</option>
+          <option value="rip">hard</option>
+        </select>
+      </form>
+      <input id="landing-start-button" type="button" value="Start Game">
     </div>
   </div>
 

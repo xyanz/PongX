@@ -19,13 +19,8 @@ http://www.1001fonts.com/tr2n-font.html#styles*/
 .landing-jumbotron h1 {
   padding-top: 25px;
   font-family: TronFont;
-  font-size: 148px;
-}
-.logo {
-  width: 100%;
-}
-.player-form{
-  width: 100%;
+  font-size: 196px;
+  align-self: center;
 }
 .landing-container {
   width: 100%;
@@ -36,9 +31,16 @@ http://www.1001fonts.com/tr2n-font.html#styles*/
   background: url("../images/trnBackground.jpg");
   background-size: cover;
 }
+form {
+  /*border: 1px solid white;*/
+  align-self: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
 input[type=text] {
   outline: none;
-  width: 50%;
+  width: 40%;
   font-family: TronFont;
   text-align: center;
   font-size: 48px;
@@ -46,6 +48,37 @@ input[type=text] {
   background-color: rgba(15,15,35, 0.1);
   border: none;
   border-bottom: 2px solid #18cae6;
+}
+select {
+  outline: none;
+  width: 40%;
+  font-family: TronFont;
+  text-align: center;
+  font-size: 48px;
+  color: #18cae6;
+  background-color: rgba(15,15,35, 0.1);
+  border: none;
+  border-bottom: 2px solid #18cae6;
+  text-align-last: center;
+}
+option {
+  text-indent: 55px;
+  text-align-last: center;
+}
+#landing-start-button {
+    width: 100%;
+    background-color: rgba(15,15,35, 0.1);
+    font-size: 56px;
+    font-family: TronFont;
+    border: none;
+    color: #18cae6;
+    padding: 16px 32px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+#landing-start-button:hover {
+  text-shadow:5px 5px 10px blue;
 }
 /*LANDING PAGE COLOR  color: #18cae6 aka Tron Blue*/
 .container {
