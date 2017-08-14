@@ -84,6 +84,7 @@ function addPlayerScore() {
   }
 }
 
+
 //Elapsed time with 1.5sec delay to avoid multiple points during collision
 function resetElapsed() {
   $els.elapsedTime = 1500;

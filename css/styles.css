@@ -1,9 +1,60 @@
+/*Custom Tron Font Downloaded From
+http://www.1001fonts.com/tr2n-font.html#styles*/
+@font-face {
+    font-family: TronFont;
+    src: url(../fonts/Tr2n.ttf);
+}
+
+.landing-jumbotron {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  color: #18cae6;
+  justify-content: center;
+  background: rgba(15,15,35, 0.7);
+  border-radius: 25px;
+}
+.landing-jumbotron h1 {
+  padding-top: 25px;
+  font-family: TronFont;
+  font-size: 148px;
+}
+.logo {
+  width: 100%;
+}
+.player-form{
+  width: 100%;
+}
+.landing-container {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: #18cae6;
+/*  display: flex;*/
+  background: url("../images/trnBackground.jpg");
+  background-size: cover;
+}
+input[type=text] {
+  outline: none;
+  width: 50%;
+  font-family: TronFont;
+  text-align: center;
+  font-size: 48px;
+  color: #18cae6;
+  background-color: rgba(15,15,35, 0.1);
+  border: none;
+  border-bottom: 2px solid #18cae6;
+}
+/*LANDING PAGE COLOR  color: #18cae6 aka Tron Blue*/
 .container {
   width: 70%;
   height: 700px;
   border: 1px solid grey;
   margin: 10px auto;
   position: relative;
+  display: none;
 }
 .game-box {
   width: 100%;
@@ -16,13 +67,15 @@
   width: 100px;
   top: 150px;
   position: absolute;
-  background: url('images/paddle1.jpg') no-repeat top left;
+  background: url("../images/paddle1.jpg");
+  background-size:contain;
   /*box-sizing: content-box;*/
 }
 #paddle1 {
   border: 2px dotted green;
   left: 10px;
-  background: url('images/paddle1.jpg') no-repeat top left;
+  background: url("../images/paddle1.jpg");
+  background-size: cover;
 
 }
 #paddle2 {
