@@ -122,14 +122,20 @@ option {
   border: 2px dotted blue;
   right: 10px;
 }
+/*Horizontal movement ball animation
+*/
 @keyframes leftright {
 0%,100% {transform: translate3d(-510px,0,0)}
 50% {transform: translate3d(380px, 0, 0)}
 }
+
+/*vertical movement ball animation*/
 @keyframes updown {
  0%,50%,100% {transform: translate3d(0,0,0)}
  25% {transform: translate3d(0,250px,0)}
  75% {transform: translate3d(0, -250px,0)} }
+
+ /*horizontal div to hang animation*/
  .horizontal {
   position: absolute;
   width: 100%;
@@ -145,13 +151,14 @@ option {
   border-radius: 15px;
   background-color: #18cae6;
 }
- .ball-active {
-   animation: leftright 3.9s infinite linear;
+/*Activates ball movement*/
+.ball-active {
+  animation: leftright 3.9s infinite linear;
  }
  button {
   width: 100px;
   height: 50px;
- }
+
 .game-info {
   display: flex;
   flex: wrap;

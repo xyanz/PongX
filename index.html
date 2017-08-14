@@ -14,7 +14,9 @@ Add powerups (extra life, slow ball, extra time) -->
     <div class="landing-jumbotron">
       <h1>PongX</h1>
       <form>
+      <!-- get player name -->
         <input type="text" id="fname" name="fname" placeholder="Name">
+        <!--  get difficulty -->
         <select id="difficulty" name="hardness">
           <option value="" disabled selected>difficulty</option>
           <option value="ez">easy</option>
@@ -35,11 +37,13 @@ Add powerups (extra life, slow ball, extra time) -->
         <div id="ball"></div>
       </div>
     </div>
+    <!-- displays Time Left and and Start/Stop Game Buttons -->
     <div class="game-controls">
       <button id="start-button">Start Game</button>
       <span id="countdownTimer">XX</span>
       <button id="stop-button">Stop Game</button>
     </div>
+    <!-- Displays Player Score -->
     <div class="game-info">
       <span id="playerScore"></span>
     </div>
@@ -49,7 +53,9 @@ Add powerups (extra life, slow ball, extra time) -->
     <div class="ending-container">
     <div class="ending-jumbotron">
       <h1>Game Over</h1>
+      <!-- Display win message with player name,score and time -->
       <p id="win-message"></p>
+      <!-- New Game button -->
       <input id="new-game-button" type="button" value="New Game">
     </div>
   </div>
