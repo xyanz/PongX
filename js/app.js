@@ -22,6 +22,7 @@
 //     this.y = y;
 //   }
 // };
+//put variables in object
 const $els = {
   body: $('body')[0],
   paddle1: $('#paddle1')[0],
@@ -42,6 +43,7 @@ const $els = {
 
 }
 
+//Adds event listeners for all button clicks and key presses
 window.onload = function() {
   $els.body.addEventListener('keydown', movePaddle);
   $els.startButton.addEventListener('click', startGame);
@@ -50,9 +52,14 @@ window.onload = function() {
 };
   $("#new-game-button")[0].addEventListener('click', newGame);
 
+//Starts new game on "New Game" button click
 function newGame() {
   location.reload();
 }
+
+//Starts Phase 2 "Game Phase"
+//Gets player name and difficulty
+//Hides Phase 1 container, brings Phase 2 container into view.
 function startPhase2() {
   $els.playerName = $('#fname').val();
   $els.difficulty = $('#difficulty').val();
@@ -61,6 +68,10 @@ function startPhase2() {
   $('.landing-container').attr("style", "display:none");
   $('.container').attr("style", "display:block");
 }
+
+//Starts Phase 3 "Game Over Phase"
+//Hides Phase 2 container, brings Phase 3 container into view
+//Display game over message with player name, score and time
 function startPhase3() {
   $els.phase2 = false;
   $els.phase3 = true;
@@ -70,6 +81,8 @@ function startPhase3() {
   $('#win-message').html(`Congratualtions ${$els.playerName}, you got
     a high score of ${$els.playerScore} in only ${totalTime} seconds.`)
 }
+
+//Moves paddle on keydown (a = "Up", z = "Down")
 //a.keycode = 65 z.keycode = 90
 function movePaddle(){
   console.log(event);
@@ -82,7 +95,8 @@ function movePaddle(){
   }
 }
 
-//.getBoundingClientRect()
+
+//Check for object collision and calls function to add player point
 //Top: (x)  Right: (y)
 function checkCollision(object1, object2){
   object1x = object1.getBoundingClientRect().top;
@@ -104,6 +118,7 @@ function checkCollision(object1, object2){
 }
 
 //Adds 1 to player score on collision and outputs result
+//Sets a 1.5sec interval delay
 function addPlayerScore() {
   setInterval(resetElapsed, 1500);
   if ($els.elapsedTime == 1500){
@@ -118,27 +133,38 @@ function addPlayerScore() {
 function resetElapsed() {
   $els.elapsedTime = 1500;
 }
+
+//Computer paddle movement tracking based on balls ("Y") position
 function moveComputerPaddle() {
   $els.paddle2.style.top = `${$els.ball.getBoundingClientRect().top}px`;
 }
+
+
 function ballPaddleCollision() {
   if (checkCollision($els.ball, $els.paddle1)) {
   }
 }
+
+//Starts the game on button click by adding verrtical and horizontal
+//movement to ball, calls timer function
 function startGame() {
   $('#ball').addClass('ball-active');
   $('#horizontal').addClass('horizontal');
   startCount();
 }
+
+//Stop the game by removing vertical and horizontal movement from ball,
+//stops timer count
 function stopGame() {
   $('#ball').removeClass("ball-active");
   $('#horizontal').removeClass("horizontal");
   stopCount();
 }
 
-//////////////REQUEST ANIMATION EVENTS/////////////////////
+////////////////////REQUEST ANIMATION EVENTS//////////////////////////
+//Recursive animation function calls ball collision and computer movement
+//functions at rapid intervals
 var globalID;
-
 var status = 0;
 
 function repeatOften() {
@@ -163,6 +189,8 @@ $("#stop-button").on("click", function() {
 
 /////////////////////////// GAME TIMER ////////////////////////////////
 //https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_settimeout_cleartimeout2///
+//In game timer for player round, counts down to (0) and starts Phase 3
+//completion
 let totalTime = 30;
 let currentTime = 0;
 let t;
@@ -191,6 +219,7 @@ function stopCount() {
     clearTimeout(t);
     timer_is_on = 0;
 }
+///////////////////////GAME TIMER//////////////////////////////////////
 
 
 
