@@ -1,3 +1,4 @@
+//TODO Convert objects to classes
 // class Ball {
 //   constructor(){
 //     this.height = "50px";
@@ -33,6 +34,11 @@ const $els = {
   stopButton: $('#stop-button')[0],
   playerScore: 0,
   elapsedTime: 0,
+  phase1: true,
+  phase2: false,
+  phase3: false,
+  playerName: "",
+  difficulty: "easy",
 
 }
 
@@ -40,7 +46,30 @@ window.onload = function() {
   $els.body.addEventListener('keydown', movePaddle);
   $els.startButton.addEventListener('click', startGame);
   $els.stopButton.addEventListener('click', stopGame);
+  $('#landing-start-button')[0].addEventListener('click', startPhase2)
 };
+  $("#new-game-button")[0].addEventListener('click', newGame);
+
+function newGame() {
+  location.reload();
+}
+function startPhase2() {
+  $els.playerName = $('#fname').val();
+  $els.difficulty = $('#difficulty').val();
+  $els.phase1 = false;
+  $els.phase2 = true;
+  $('.landing-container').attr("style", "display:none");
+  $('.container').attr("style", "display:block");
+}
+function startPhase3() {
+  $els.phase2 = false;
+  $els.phase3 = true;
+  $('.landing-container').attr("style", "display:none");
+  $('.container').attr("style", "display:none");
+  $('.ending-container').attr("style", "display:block");
+  $('#win-message').html(`Congratualtions ${$els.playerName}, you got
+    a high score of ${$els.playerScore} in only ${totalTime} seconds.`)
+}
 //a.keycode = 65 z.keycode = 90
 function movePaddle(){
   console.log(event);
@@ -142,10 +171,13 @@ let timer_is_on = 0;
 function timedCount() {
   if ((totalTime - currentTime) <= 0) {
     stopGame();
+    startPhase3();
   }
+  if((totalTime - currentTime) >= 0){
     $('#countdownTimer').html(totalTime - currentTime);
     currentTime = currentTime + 1;
     t = setTimeout(function(){ timedCount() }, 1000);
+  }
 }
 
 function startCount() {
