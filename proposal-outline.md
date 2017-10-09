@@ -49,7 +49,7 @@ BitBalloon analyst-total-40544.bitballoon.com
  - Add timer countdown to give player winning condition(no loss - friendship wins :))
 
  
- +### Phase IV
+ ### Phase IV
  - Add landing page with form to get player name and desired difficulty
  - Add CSS styling, custom font, background to all 3 Phase pages
  - Display game winning message on phase 3 with player name, score, and time of round
