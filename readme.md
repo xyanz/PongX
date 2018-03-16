@@ -1,12 +1,11 @@
-Play me @ BitBalloon analyst-total-40544.bitballoon.com
+Play me @ BitBalloon ==>>>>>  analyst-total-40544.bitballoon.com
  -----------------------------------------
  
  -------------------------------------------
- Slides Link
+ 
  ---------------------------------
  *** YZ /Aug 11,2017 ***
  
- # PongX Proposal
  
  ## What is PongX?
  
