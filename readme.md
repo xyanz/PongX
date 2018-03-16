@@ -1,4 +1,4 @@
-Play me @ BitBalloon [Play Me!](analyst-total-40544.bitballoon.com)
+Play me @ BitBalloon analyst-total-40544.bitballoon.com
  -----------------------------------------
  
  -------------------------------------------
